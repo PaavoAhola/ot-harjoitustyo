@@ -7,3 +7,6 @@ Tehdään **lihavia** ja *laihoja* erikoistehostesanoja.
 
 
 Tämä on **muutos**, jonka tulisi näkyä siellä GitHubissa!
+
+
+EPÄSYNKROONI, TÄMÄ ON EPÄSYNKROONI

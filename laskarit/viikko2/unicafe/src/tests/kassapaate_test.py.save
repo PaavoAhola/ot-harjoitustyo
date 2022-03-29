@@ -1,0 +1,26 @@
+import unittest
+from kassapaate import Kassapaate
+
+class TestKassapaate(unittest.TestCase):
+    def setUp(self):
+        self.kassa = Kassapaate()
+
+    def test_alkuraha_oikea(self):
+        self.assertEqual(self.kassa.kassassa_rahaa, 100000)
+
+    def test_alkulounaat_oikea(self):
+        self.assertEqual(self.kassa.edulliset + self.kassa.maukkaat, 0)
+
+    def test_kassa_kasvaa_kateisella_edullisesti(self):
+        self.kassa.syo_edullisesti_kateisella(300)
+        self.assertEqual(self.kassa.kassassa_rahaa, 100240)
+
+    def test_kassa_kasvaa_kateisella_maukkaasti(self):
+        self.kassa.syo_maukkaasti_kateisella(500)
+        self.assertEqual(self.kassa.kassassa_rahaa, 100400)
+
+    def test_kassa_kasvaa_kateisella_edullisesti(self):
+        self.kassa.syo_edullisesti_kateisella(300)
+        self.assertEqual(self.kassa.kassassa_rahaa, 100240)
+    def test_oikea_vaihtoraha_edullisesti(self):
+        self.assertEqual(self.kassa.syo_edullisesti_kateisella(300), 60)

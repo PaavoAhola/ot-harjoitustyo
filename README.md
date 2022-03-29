@@ -5,6 +5,7 @@ Tehdään **lihavia** ja *laihoja* erikoistehostesanoja.
 
 [gitlog](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
+[vaatimusmäärittely](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 Tämä on **muutos**, jonka tulisi näkyä siellä GitHubissa!
 

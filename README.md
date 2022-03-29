@@ -7,6 +7,8 @@ Tehdään **lihavia** ja *laihoja* erikoistehostesanoja.
 
 [vaatimusmäärittely](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
+[työaikakirjanpito](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+
 Tämä on **muutos**, jonka tulisi näkyä siellä GitHubissa!
 
 

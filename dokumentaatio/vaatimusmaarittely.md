@@ -11,8 +11,7 @@ kryptosanaristikoita.
 
 - Päävalikossa käyttäjä voi valita neljästä vaihtoehdosta:
 	- Pelaa:
-		- Käyttäjä voi pelata omia tai muiden käyttäjien sanaristi-
-koita.
+		- Käyttäjä voi pelata omia tai muiden käyttäjien sanaristikoita.
 		- Käyttäjä voi pelata koneen generoimaa kryptosanaristikkoa
 	- Luo:
 		- Käyttäjä voi luoda oman sanaristikon tai jatkaa vanhan

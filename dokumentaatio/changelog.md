@@ -11,4 +11,4 @@
 - Lisätty UserRepository-luokka hallinnoimaan käyttäjätunnuksia
 - Käyttäjän luoma tunnus tallentuu tiedostoon
 - Käyttäjä voi kirjautua sisään
-
+- Huomautus tarkastajalle: tällä viikolla en ehtinyt luoda uusia testejä, eli testikattavuus vajaa

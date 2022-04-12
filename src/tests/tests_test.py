@@ -1,6 +1,7 @@
 import unittest
 from objects import User
 
+
 class TestUser(unittest.TestCase):
     def test_username_cannot_be_changed(self):
         user = User("PelleHermanni69", "123456789")

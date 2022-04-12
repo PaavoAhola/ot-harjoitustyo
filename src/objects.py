@@ -5,6 +5,7 @@ class Users:
     def add_user(self, User):
         self.users.append(User)
 
+
 class User:
     def __init__(self, name, password):
         self.__name = name
@@ -14,6 +15,7 @@ class User:
 
     def return_name(self):
         return self.__name
+
 
 class Crossword:
     def __init__(self):

@@ -2,8 +2,8 @@ class Users:
     def __init__(self):
         self.users = []
 
-    def add_user(self, User):
-        self.users.append(User)
+    def add_user(self, user):
+        self.users.append(user)
 
 
 class User:
@@ -21,8 +21,8 @@ class Crossword:
     def __init__(self):
         self.highscores = []
 
-    def add_highscore(time, User):
-        self.highscores.append((time, User))
+    def add_highscore(self, time, user):
+        self.highscores.append((time, user))
         if len(self.highscores) == 11:
             self.highscores.sort()
             self.highscores.pop()

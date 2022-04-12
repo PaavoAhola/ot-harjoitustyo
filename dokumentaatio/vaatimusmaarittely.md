@@ -5,9 +5,9 @@ sanat ja mahdolliset vihjeet itse. Lisäksi voi pelata sovelluksen generoimia
 kryptosanaristikoita.
 
 ## Toiminnallisuudet
-- Käyttäjä voi luoda järjestelmään käyttäjätunnuksen
+- Käyttäjä voi luoda järjestelmään käyttäjätunnuksen **tehty**
 	- Tunnuksen tulee olla pituudeltaan vähintään 3 merkkiä
-- Käyttäjä voi kirjautua järjestelmään, jos tunnus on olemassa
+- Käyttäjä voi kirjautua järjestelmään, jos tunnus on olemassa **tehty**
 
 - Päävalikossa käyttäjä voi valita neljästä vaihtoehdosta:
 	- Pelaa:

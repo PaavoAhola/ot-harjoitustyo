@@ -7,3 +7,5 @@
 [changelog](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
 [arkkitehtuuri](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+[release](https://github.com/PaavoAhola/ot-harjoitustyo/releases/tag/viikko5)

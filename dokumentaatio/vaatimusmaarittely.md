@@ -15,7 +15,7 @@ kryptosanaristikoita.
 		- Käyttäjä voi pelata koneen generoimaa kryptosanaristikkoa
 	- Luo:
 		- Käyttäjä voi luoda oman sanaristikon tai jatkaa vanhan
-luonnoksen muokkaamista
+luonnoksen muokkaamista **aloitettu tekemään**
 	- Tilastot:
 		- Käyttäjä voi katsoa statistiikkaa eri käyttäjien pelaamista
 peleistä ja luoduista ristikoista.

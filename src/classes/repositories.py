@@ -6,7 +6,6 @@ class UserRepository:
 
     def _ensure_file_exists(self):
         Path(self._file_path).touch()
-        print("File exists")
 
     def allow_login(self, username, password):
         if self.user_exists(username):

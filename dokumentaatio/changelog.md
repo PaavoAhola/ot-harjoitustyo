@@ -12,3 +12,8 @@
 - Käyttäjän luoma tunnus tallentuu tiedostoon
 - Käyttäjä voi kirjautua sisään
 - Huomautus tarkastajalle: tällä viikolla en ehtinyt luoda uusia testejä, eli testikattavuus vajaa
+
+## Viikko 5
+
+- Lisätty käyttäjälle sanaristikon luomisvaihtoehto. Toiminta vielä puutteellinen.
+- Testit jäivät tälläkin viikolla toteuttamatta ja muutenkin palautus jäi harmillisen keskeneräiseksi.

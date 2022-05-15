@@ -81,3 +81,6 @@ def run_menu():
                 user = None
                 print("Sinut on kirjattu ulos. Nähdään taas!")
                 break
+
+if __name__ == "__main__":
+    run_menu()

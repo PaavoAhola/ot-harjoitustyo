@@ -1,4 +1,26 @@
+import os
+
 from entities.user import User
+from entities.repositories import UserRepository
+
+DIRNAME = os.path.dirname(__file__)
+
+USERS = UserRepository(os.path.join(DIRNAME, "data", "users.csv"))
+
+def login():
+    symbol = input("1: Kirjaudu sisään, 2: Luo uusi käyttäjä ")
+    if symbol == "1":
+        username = input("Käyttäjätunnus: ")
+        passw = input("Salasana: ")
+        if USERS.allow_login(username, passw):
+            print(f"Tervetuloa, {username}!")
+            user_info = users.fetch_user(username)
+            return User(user_info[0],user_info[1])
+        else:
+            return False
+    elif symbol == "2":
+        return create_user(users)
+        
 
 def create_user(users):
     while True:

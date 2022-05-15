@@ -3,6 +3,8 @@ Tämän sovelluksen avulla käyttäjä pystyy laatimaan 10x10 sanaristikoita ja 
 
 ## Dokumentaatio
 
+[käyttöohje](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
 [vaatimusmäärittely](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [työaikakirjanpito](https://github.com/PaavoAhola/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)

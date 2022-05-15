@@ -1,6 +1,5 @@
 import os
 from datetime import datetime
-from pathlib import Path
 
 from entities.crosswords import Crossword
 from entities.user import User
@@ -8,7 +7,7 @@ from entities.repositories import UserRepository, CrosswordRepository
 from functions.menu import login
 from functions.using_crosswords import create_crossword, play_crossword
 
-DIRNAME = Path(__file__).parent
+DIRNAME = "src/functions"
 
 USERS = UserRepository(os.path.join(DIRNAME, "data", "users.csv"))
 CROSSWORDS = CrosswordRepository(os.path.join(DIRNAME, "data", "crosswords"))
@@ -19,7 +18,7 @@ def play_options():
         ff = CROSSWORDS.play(f)
         options.append(ff.name)
     return options
-    
+
 def play_environment(pick, user):
     crossword = CROSSWORDS.play(pick + ".txt")
     for i in range(10):

@@ -14,13 +14,13 @@ def login():
         passw = input("Salasana: ")
         if USERS.allow_login(username, passw):
             print(f"Tervetuloa, {username}!")
-            user_info = users.fetch_user(username)
+            user_info = USERS.fetch_user(username)
             return User(user_info[0],user_info[1])
         else:
             return False
     elif symbol == "2":
-        return create_user(users)
-        
+        return create_user(USERS)
+
 
 def create_user(users):
     while True:

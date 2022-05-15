@@ -15,6 +15,7 @@ def run_menu():
     while True:
         result = login()
         if type(result) == bool:
+            print("Väärä käyttäjänimi tai salasana. Yritä uudestaan.")
             continue
         user = result
         break

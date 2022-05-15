@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+from pathlib import Path
 
 from entities.crosswords import Crossword
 from entities.user import User
@@ -7,7 +8,7 @@ from entities.repositories import UserRepository, CrosswordRepository
 from functions.menu import login
 from functions.using_crosswords import create_crossword, play_crossword
 
-DIRNAME = os.path.dirname(__file__)
+DIRNAME = Path(__file__).parent
 
 USERS = UserRepository(os.path.join(DIRNAME, "data", "users.csv"))
 CROSSWORDS = CrosswordRepository(os.path.join(DIRNAME, "data", "crosswords"))

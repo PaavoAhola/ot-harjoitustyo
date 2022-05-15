@@ -17,3 +17,13 @@
 
 - Lisätty käyttäjälle sanaristikon luomisvaihtoehto. Toiminta vielä puutteellinen.
 - Testit jäivät tälläkin viikolla toteuttamatta ja muutenkin palautus jäi harmillisen keskeneräiseksi.
+
+## Viikko 6
+
+- Ei lisäyksiä
+
+## Viikko 7
+
+- Käyttäjä voi luoda ja pelata sanaristikoita
+- Käyttäjä voi katsella tilastoja julkaistuista sanaristikoista
+- Sanaristikko- ja Käyttäjä-olioiden testaus. Muiden koodin osien testaaminen osoittautui liian vaikeaksi.

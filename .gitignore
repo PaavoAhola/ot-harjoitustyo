@@ -3,3 +3,5 @@ __pycache__
 .coverage
 htmlcov
 users.csv
+crosswords.csv
+.git

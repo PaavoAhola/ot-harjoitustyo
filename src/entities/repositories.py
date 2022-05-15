@@ -1,4 +1,7 @@
+from os import listdir
+from os.path import isfile, join
 from pathlib import Path
+import pickle
 
 class UserRepository:
     def __init__(self, file_path):
@@ -50,3 +53,38 @@ class UserRepository:
                 parts = row.split(";")
                 if parts[0] == username:
                     return parts
+
+
+class CrosswordRepository:
+    def __init__(self, file_path):
+        self._file_path = file_path
+
+    def save(self,crossword):
+        for f in listdir(self._file_path + "/saved"):
+            if f == f"{crossword.name}.txt":
+                print("Haluatko korvata samannimisen ristikon?")
+                choice = input("1: Kyllä, 2: Ei")
+                if choice == "2":
+                    return 
+        filehandler = open(f"{self._file_path}/saved/{crossword.name}.txt", "wb")
+        pickle.dump(crossword, filehandler)
+        print("Ristikkosi on tallennettu.")
+
+    def publish(self,crossword):
+        for f in listdir(self._file_path + "/published"):
+            if f == f"{crossword.name}.txt":
+                print("Haluatko korvata samannimisen ristikon?")
+                choice = input("1: Kyllä, 2: Ei")
+                if choice == "2":
+                    return
+        filehandler =  open(f"{self._file_path}/published/{crossword.name}.txt", "wb")
+        pickle.dump(crossword, filehandler)
+        print("Ristikkosi on julkaistu muiden pelattavaksi.")
+
+    def load(self,name):
+        filehandler = open(f"{self._file_path}/saved/{name}", "rb")
+        return pickle.load(filehandler)
+
+    def play(self,name):
+        filehandler = open(f"{self._file_path}/published/{name}", "rb")
+        return pickle.load(filehandler)

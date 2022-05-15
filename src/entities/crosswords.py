@@ -1,24 +1,7 @@
-class Users:
-    def __init__(self):
-        self.users = []
-
-    def add_user(self, user):
-        self.users.append(user)
-
-
-class User:
-    def __init__(self, name, password):
-        self.__name = name
-        self.__password = password
-        self.own_crosswords = []
-        self.saved_crosswords = []
-
-    def return_name(self):
-        return self.__name
-
-
 class Crossword:
-    def __init__(self):
+    def __init__(self, name, creator):
+        self.name = name
+        self.creator = creator
         self.highscores = []
         self.squares = []
         for i in range(10):
@@ -29,16 +12,28 @@ class Crossword:
 
     def add_highscore(self, time, user):
         self.highscores.append((time, user))
+        self.highscores.sort()
         if len(self.highscores) == 11:
-            self.highscores.sort()
             self.highscores.pop()
+
+    def show_highscores(self):
+        print(f"{self.name} by {self.creator}")
+        tries = False
+        for score in self.highscores:
+            print(f"{score[1]}: {score[0]}")
+            tries = True
+        if not tries:
+            print("Ei tuloksia")
+
 
 class Square:
     def __init__(self, x, y):
-        self.letter = None
+        self.letter = " "
         self.on = True
         self.position = (x,y)
         self.surface = None
+        self.hint_right = ""
+        self.hint_down = ""
 
     def switch(self):
         if self.on:

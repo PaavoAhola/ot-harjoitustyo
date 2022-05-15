@@ -1,4 +1,6 @@
-def create_user():
+from entities.user import User
+
+def create_user(users):
     while True:
         name = input(
             "Syötä haluamasi käyttäjänimi (vähintään 3 merkkiä). Palaa takaisin syöttämällä 'X'.")

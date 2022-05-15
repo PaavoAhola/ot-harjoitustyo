@@ -7,4 +7,4 @@
 | 12.4.     | 0,5      | testauksen ja tkinterin toimivuus|
 | 12.4.     | 4        | käyttäjän sisäänkirjautuminen, koodin laatu, luokkakaavio|
 | 26.4.     | 4        | Järjestelin koodia hakemistoihin ja lisäsin hieman pygame-toiminnallisuutta |
-| Yhteensä  | 8        |               |
+| Yhteensä  | 12        |               |
